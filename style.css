@@ -1,0 +1,725 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom right, #edeed4, #a5d9d6 );
+  background-color: transparent; 
+  margin: 0;
+}
+
+/* Cabeçalho */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1683b1;
+  z-index: 10;
+  color: #FFFFFF;
+}
+
+/* Logo centralizado */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.logo {
+  width: 150px;
+  height: 154px;
+  object-fit: contain;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 20px; /* Espaço entre os itens do menu */
+}
+
+.menu-item {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #ACE8E6;
+}
+
+/* Área principal com fundo gradiente */
+.hero {
+  background-image: linear-gradient(to bottom right, #edeed4, #a5d9d6); /* Gradiente de fundo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #31454d;
+  height: 100vh; 
+  margin-top: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+/* Container dos botões */
+.button-container {
+  display: flex; /* Alinha os itens em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  flex-wrap: wrap; /* Permite os botões quebrarem de linha se necessário */
+  margin: 20px auto;
+  padding: 10px 20px; /* Espaço ao redor do conteúdo */
+  width: 100%; /* Garante que ocupe toda a largura disponível */
+  text-align: center;
+  position: relative; /* Para garantir que o fundo do site fique visível atrás */
+  z-index: 1; /* Para sobrepor o fundo */
+}
+
+/* Botões */
+.button {
+  background-color: #1683b1;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  margin: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* Emojis animados */
+.button::after {
+  content: attr(data-emoji);
+  position: absolute;
+  opacity: 0;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%) scale(0.8);
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.button:hover::after {
+  opacity: 1;
+  right: 10px;
+  transform: translateY(-50%) scale(1);
+}
+
+.button:hover {
+  background-color: #a5d9d6;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Para os botões ficarem na mesma linha, com flexibilidade */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaço entre os botões */
+  flex-wrap: wrap; /* Faz com que os botões se ajustem em múltiplas linhas, se necessário */
+}
+
+.button-container .button {
+  margin: 0 10px; /* Adiciona uma margem entre os botões */
+}
+
+/* Caso o container de botões esteja dentro de uma seção com fundo específico */
+#nossas-missoes .button-container {
+  background: transparent; /* Faz o fundo do container ficar transparente, permitindo que o fundo da seção seja visível */
+}
+
+
+
+/* Seção "Nossa Missão" com fundo gradiente */
+.nossa-missao {
+  background: linear-gradient(to right, #edeed4, #a5d9d6); 
+  padding: 50px;
+  color: #31454d;
+  text-align: center;
+  width: 100%; 
+}
+
+
+/* Rodapé fixo na parte inferior */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1683b1; /* Cor dos botões */
+    color: #FFFFFF; /* Cor do texto do rodapé */
+    font-size: 0.9em;
+}
+
+/* Seção "Sobre Nós" */
+.about {
+    background-color: #a5d9d6; /* Azul claro para um ambiente calmo */
+    color: #31454d;
+    padding: 50px;
+}
+
+/* Estilo da seção de missão */
+.mission-section {
+  width: 100%;
+  min-height: 600px; /* Definir um tamanho mínimo para a seção */
+  padding: 20px;
+  background: linear-gradient(to bottom right, #edeed4, #a5d9d6); /* Use 'background' para gradientes */
+  box-sizing: border-box;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mission-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura */
+  flex-wrap: wrap; /* Adiciona flexibilidade para telas menores */
+}
+
+.mission-image {
+  flex: 1; /* Garante que a imagem ocupe o espaço necessário, mas sem ultrapassar */
+  max-width: 400px; /* Limita a largura da imagem */
+  margin-right: 20px; /* Espaço entre imagem e texto */
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0; /* Inicia com a imagem invisível */
+  animation: fadeInSlide 3s forwards; /* Aplica o efeito de fade e slide */
+}
+
+.mission-text {
+  flex: 1; /* Garante que o texto ocupe o espaço restante */
+  width: 80%;
+  font-size: 1.1rem;
+  text-align: justify;
+  margin: 0 auto; 
+  line-height: 1.2;
+  color: #333;
+  opacity: 0; /* Inicia com o texto invisível */
+  animation: fadeInSlide 3s forwards 1s; /* Aplica o efeito com delay para o texto */
+}
+
+/* Animação de fade e deslizamento */
+@keyframes fadeInSlide {
+  0% {
+      transform: translateX(-50px); /* Começa do lado esquerdo */
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+/* Seção "Animais para Adoção" */
+.adoption {
+    background-color: #edeed4;
+    color: #31454d;
+    padding: 50px;
+}
+
+.adoption-card {
+    border: 2px solid #1683b1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção "Como Ajudar" */
+.help {
+    background-color: #eaf4f8; /* Branco levemente azulado */
+    color: #31454d;
+    padding: 50px;
+}
+
+/* Estilo do título importante */
+.important-title {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagem dos animais com sombra */
+.animal-image {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Carrossel */
+
+/* Estilos gerais do carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 471px;  /* Isso deve corresponder à altura que você determinou para a imagem */
+  overflow: hidden;  /* Garantir que o conteúdo não ultrapasse a área do carrossel */
+  z-index: 1;
+  background: transparent; /* Garantir que não haja cor de fundo extra */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 2s ease-in-out; /* Aumenta o tempo de transição */
+}
+
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fullscreen-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Isso faz a imagem ocupar toda a área sem distorção */
+}
+
+/* Ajustar a largura e a altura do container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px; /* Altura fixada do carrossel */
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para o texto */
+  width: 100%;
+}
+
+/* Imagem do carrossel */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Isso garante que a imagem ocupe totalmente o espaço sem distorcer */
+}
+
+/* Texto do carrossel */
+.carousel-text {
+width: 35%; /* Controla a largura do texto */
+position: absolute;
+top: 0;
+right: 0;
+color: white;
+font-family: 'Roboto', sans-serif; /* Fonte moderna */
+font-size: 2.5rem; /* Tamanho do texto maior */
+font-weight: bold;
+text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra maior */
+display: flex;
+flex-direction: column;
+justify-content: center;
+background: transparent; /* Fundo transparente para o texto */
+padding: 20px;
+z-index: 10;
+opacity: 0; /* Inicialmente invisível para animação */
+animation: backInLeft 2s ease-out forwards; /* Efeito BackInLeft */
+animation-delay: 1s; /* Delay para dar tempo de fade in */
+
+}
+
+.carousel-slide {
+margin-bottom: 20px;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.carousel-text .carousel-slide.active {
+opacity: 1;
+}
+
+button.prev, button.next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+font-size: 24px;
+padding: 10px;
+cursor: pointer;
+z-index: 20;
+}
+
+button.prev {
+left: 10px;
+}
+
+button.next {
+right: 10px;
+}
+
+/* Estilo para o efeito BackInLeft */
+@keyframes backInLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.menu-item:hover {
+  color: #ACE8E6; 
+  animation: bounce 1s; /* Nome da animação */
+}
+
+/* Rodapé */
+footer {
+  background-color: #1683b1;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Container do Rodapé */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Seção do Rodapé */
+.footer-section {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Títulos das Seções */
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #a5d9d6; /* Cor suave para os títulos */
+}
+
+/* Lista de Links - Flexbox para 2 links por linha */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  display: grid; /* Usando grid para controlar as colunas */
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+  gap: 10px; /* Espaçamento entre os links */
+  justify-content: center;
+}
+
+.footer-section ul li {
+  text-align: center;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-section ul li a:hover {
+  color: #a5d9d6; /* Cor quando passar o mouse */
+}
+
+/* Links de redes sociais e ícones */
+.footer-section a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.footer-section a:hover {
+  color: #a5d9d6; /* Cor ao passar o mouse */
+}
+
+.footer-section i {
+  transition: transform 0.3s ease; /* Suaviza o efeito de transformação */
+}
+
+.footer-section a:hover i {
+  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+  .footer-section ul {
+    grid-template-columns: 1fr; /* Em telas pequenas, os links vão ficar em 1 coluna */
+  }
+
+  .footer-section ul li {
+    text-align: center; /* Alinha o texto ao centro */
+  }
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-value {
+  font-size: 3rem; /* Tamanho da fonte */
+  font-weight: bold;
+  color: #1683b1; /* Cor azul */
+  transition: all 2s ease-out;
+}
+
+.counter-label {
+  font-size: 1.2rem;
+  color: #333; /* Cor de texto escuro */
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .counter-container {
+      flex-direction: column;
+  }
+
+  .counter-item {
+      margin-bottom: 30px;
+  }
+}
+
+/* Estilizando o container do formulário */
+#contato {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Título e parágrafo */
+#contato h2 {
+  text-align: center;
+  color: #333;
+}
+
+#contato p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilizando os labels */
+#contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilizando os inputs, textarea e select */
+#contato input,
+#contato textarea,
+#contato select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#contato textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Estilizando o botão */
+#contato button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1683b1;;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+  background-color: #1683b1;
+}
+
+/* Estilizando o formulário para dispositivos menores */
+@media (max-width: 768px) {
+  #contato {
+    padding: 15px;
+  }
+
+  #contato h2 {
+    font-size: 1.5rem;
+  }
+
+  #contato input,
+  #contato textarea,
+  #contato select {
+    font-size: 14px;
+  }
+
+  #contato button {
+    font-size: 14px;
+  }
+}
+
+/* Estilo do índice */
+#faq-index {
+  background-color: transparent;
+  padding: 20px;
+}
+
+#faq-index ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#faq-index ul li {
+  margin: 10px 0;
+}
+
+#faq-index ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#faq-index ul li a:hover {
+  color: #0066cc;
+}
+
+/* Estilo das seções */
+section {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+section h3 {
+  margin-top: 0;
+}
+
+/*SEÇÃO FINAIS FELIZES */
+
+.finais-felizes {
+  display: flex;
+  flex-direction: column; /* Coloca os itens um embaixo do outro */
+  align-items: center; /* Centraliza os itens */
+  gap: 30px; /* Espaçamento entre os itens */
+  margin-top: 50px; /* Distância do topo */
+  padding: 0 20px; /* Espaçamento nas laterais */
+}
+
+.historia {
+  text-align: center; /* Centraliza o texto embaixo da imagem */
+  width: 100%;
+  max-width: 600px; /* Limita o tamanho máximo das imagens */
+}
+
+.historia img {
+  width: 100%; /* Faz a imagem se ajustar ao tamanho do container */
+  height: auto;
+  border-radius: 8px; /* Borda arredondada para um visual mais suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+}
+
+.mensagem {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 15px; /* Espaçamento entre a imagem e o texto */
+  font-style: italic; /* Texto em itálico para dar um toque diferente */
+}
+
+/* seção quero adotar */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff5252;
+}

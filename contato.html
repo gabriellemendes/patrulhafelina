@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG - Patrulha Felina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://i.ibb.co/MppDHRj/patrulhafelinalogo2.png" alt="Logo Patrulha Felina" class="logo">
+        </div>
+        <div class="menu animate__animated animate__fadeIn" id="menu">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="a-ong.html" class="menu-item">A ONG</a>
+            <a href="queroadotar.html" class="menu-item">Quero Adotar</a>
+            <a href="resgate.html" class="menu-item">Resgate</a>
+            <a href="queroajudar.html" class="menu-item">Quero Ajudar</a>
+            <a href="lartemporario.html" class="menu-item">Lar Temporário</a>
+            <a href="finaisfelizes.html" class="menu-item">Finais Felizes</a>
+            <a href="faq.html" class="menu-item">FAQ</a>
+            <a href="contato.html" class="menu-item">Contato</a>
+        </div>
+    </header>
+
+    <!-- Carrossel de Texto com Imagem de Fundo Estática -->
+    <div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-image">
+            <img src="https://i.ibb.co/0BBRW56/catflying.png" class="d-block w-100 fullscreen-image" alt="Gato voando">
+        </div>
+        <div class="carousel-text">
+            <div class="carousel-slide">Bem-vindo a ONG Patrulha Felina!</div>
+            <div class="carousel-slide">Cada adoção salva uma vida. Junte-se a nós!</div>
+            <div class="carousel-slide">Seja o herói de um gato em necessidade!</div>
+            <div class="carousel-slide">Adoção é amor. Resgate é esperança!</div>
+            <div class="carousel-slide">Juntos podemos transformar o futuro dos gatos resgatados!</div>
+            <div class="carousel-slide">Seu novo companheiro está esperando por você.!</div>
+        </div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+
+    <!-- O Projeto -->
+    <div class="mission-section">
+        <h2 class="mission-title">Contato</h2>
+        <div class="mission-container">
+            <div class="mission-text">
+            
+                <section id="contato">
+                    <h2>Entre em contato com a gente!</h2>
+                    <p>Estamos aqui para ajudar! Se você tem alguma dúvida ou quer saber mais sobre nossos projetos, adotar, ou até mesmo colaborar, nos envie uma mensagem. Estamos ansiosos para conversar com você!</p>
+                    <form action="/enviar" method="post">
+                        <center>
+                      <!-- Campo Nome -->
+                      <label for="nome">Nome</label>
+                      <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                      
+                      <!-- Campo E-mail -->
+                      <label for="email">E-mail</label>
+                      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                      
+                      <!-- Campo Telefone -->
+                      <label for="telefone">Telefone</label>
+<input 
+  type="tel" 
+  id="telefone" 
+  name="telefone" 
+  placeholder="(XX)000000000" 
+  maxlength="13" 
+  required
+>
+                      
+                      <!-- Campo Assunto (Dropdown) -->
+                      <label for="assunto">Assunto</label>
+                      <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="adocao">Adotar um Gatinho</option>
+                        <option value="resgatar">Resgatar um Gatinho</option>
+                        <option value="doacoes">Doações</option>
+                        <option value="lar">Lar Temporário</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="duvidas">Dúvidas gerais</option>
+                        <option value="outros">Outros</option>
+                      </select>
+                      
+                      <!-- Campo Mensagem -->
+                      <label for="mensagem">Mensagem</label>
+                      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                      
+                      <!-- Botão de Enviar -->
+                      <button type="submit">Enviar mensagem</button>
+                    </form>
+                  </section>
+                </center>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <!-- Patrulha -->
+            <div class="footer-section">
+                <h3>Patrulha Felina</h3>
+                <p>O Patrulha Felina busca lares para gatos encontrados abandonados em Maceió e também trabalha para conscientizar as pessoas sobre a importância da castração e posse responsável.</p>
+            </div>
+    
+            <!-- MENU -->
+            <div class="footer-section">
+                <h3>MENU</h3>
+                <ul>
+                    <li><a href="a-ong.html">A ONG</a></li>
+                    <li><a href="queroajudar.html">Quero Ajudar</a></li>
+                    <li><a href="resgate.html">Resgate</a></li>
+                    <li><a href="queroadotar.html">Quero Adotar</a></li>
+                    <li><a href="lartemporario.html">Lar Temporário</a></li>
+                    <li><a href="finaisfelizes.html">Finais Felizes</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+    
+           
+            <!-- Nossas Redes Sociais -->
+<div class="footer-section">
+    <h3>Nossas Redes Sociais</h3>
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://x.com" target="_blank" aria-label="X (Twitter)">
+        <i class="fab fa-x"></i> <!-- 'x' representa o ícone do Twitter, que foi renomeado para X -->
+    </a>
+    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+
+        </div>
+    
+        <!-- Rodapé Inferior -->
+        <div class="footer-bottom">
+            <p>© 2024 Patrulha Felina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
