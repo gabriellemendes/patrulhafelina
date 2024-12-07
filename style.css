@@ -44,7 +44,7 @@ body, html {
 /* Menu */
 .menu {
   display: flex;
-  gap: 20px; /* Espaço entre os itens do menu */
+  gap: 20px; 
 }
 
 .menu-item {
@@ -75,16 +75,16 @@ body, html {
 
 /* Container dos botões */
 .button-container {
-  display: flex; /* Alinha os itens em linha */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  align-items: center; /* Centraliza os itens verticalmente */
-  flex-wrap: wrap; /* Permite os botões quebrarem de linha se necessário */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
   margin: 20px auto;
-  padding: 10px 20px; /* Espaço ao redor do conteúdo */
-  width: 100%; /* Garante que ocupe toda a largura disponível */
+  padding: 10px 20px; 
+  width: 100%; 
   text-align: center;
-  position: relative; /* Para garantir que o fundo do site fique visível atrás */
-  z-index: 1; /* Para sobrepor o fundo */
+  position: relative; 
+  z-index: 1; 
 }
 
 /* Botões */
@@ -129,17 +129,17 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Espaço entre os botões */
-  flex-wrap: wrap; /* Faz com que os botões se ajustem em múltiplas linhas, se necessário */
+  gap: 20px; 
+  flex-wrap: wrap; 
 }
 
 .button-container .button {
-  margin: 0 10px; /* Adiciona uma margem entre os botões */
+  margin: 0 10px; 
 }
 
-/* Caso o container de botões esteja dentro de uma seção com fundo específico */
+
 #nossas-missoes .button-container {
-  background: transparent; /* Faz o fundo do container ficar transparente, permitindo que o fundo da seção seja visível */
+  background: transparent; 
 }
 
 
@@ -162,14 +162,14 @@ body, html {
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    background-color: #1683b1; /* Cor dos botões */
-    color: #FFFFFF; /* Cor do texto do rodapé */
+    background-color: #1683b1; 
+    color: #FFFFFF; 
     font-size: 0.9em;
 }
 
 /* Seção "Sobre Nós" */
 .about {
-    background-color: #a5d9d6; /* Azul claro para um ambiente calmo */
+    background-color: #a5d9d6; 
     color: #31454d;
     padding: 50px;
 }
@@ -177,9 +177,9 @@ body, html {
 /* Estilo da seção de missão */
 .mission-section {
   width: 100%;
-  min-height: 600px; /* Definir um tamanho mínimo para a seção */
+  min-height: 600px; 
   padding: 20px;
-  background: linear-gradient(to bottom right, #edeed4, #a5d9d6); /* Use 'background' para gradientes */
+  background: linear-gradient(to bottom right, #edeed4, #a5d9d6); 
   box-sizing: border-box;
 }
 
@@ -196,39 +196,39 @@ body, html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 100%; /* Garante que o conteúdo não ultrapasse a largura */
-  flex-wrap: wrap; /* Adiciona flexibilidade para telas menores */
+  max-width: 100%; 
+  flex-wrap: wrap; 
 }
 
 .mission-image {
-  flex: 1; /* Garante que a imagem ocupe o espaço necessário, mas sem ultrapassar */
-  max-width: 400px; /* Limita a largura da imagem */
-  margin-right: 20px; /* Espaço entre imagem e texto */
+  flex: 1; 
+  max-width: 400px; 
+  margin-right: 20px; 
 }
 
 .mission-image img {
   width: 100%;
   height: auto;
-  opacity: 0; /* Inicia com a imagem invisível */
-  animation: fadeInSlide 3s forwards; /* Aplica o efeito de fade e slide */
+  opacity: 0; 
+  animation: fadeInSlide 3s forwards; 
 }
 
 .mission-text {
-  flex: 1; /* Garante que o texto ocupe o espaço restante */
+  flex: 1; 
   width: 80%;
   font-size: 1.1rem;
   text-align: justify;
   margin: 0 auto; 
   line-height: 1.2;
   color: #333;
-  opacity: 0; /* Inicia com o texto invisível */
-  animation: fadeInSlide 3s forwards 1s; /* Aplica o efeito com delay para o texto */
+  opacity: 0; 
+  animation: fadeInSlide 3s forwards 1s; 
 }
 
 /* Animação de fade e deslizamento */
 @keyframes fadeInSlide {
   0% {
-      transform: translateX(-50px); /* Começa do lado esquerdo */
+      transform: translateX(-50px); 
       opacity: 0;
   }
   100% {
@@ -252,7 +252,7 @@ body, html {
 
 /* Seção "Como Ajudar" */
 .help {
-    background-color: #eaf4f8; /* Branco levemente azulado */
+    background-color: #eaf4f8; 
     color: #31454d;
     padding: 50px;
 }
@@ -273,15 +273,15 @@ body, html {
 .carousel {
   position: relative;
   width: 100%;
-  height: 471px;  /* Isso deve corresponder à altura que você determinou para a imagem */
-  overflow: hidden;  /* Garantir que o conteúdo não ultrapasse a área do carrossel */
+  height: 471px;  
+  overflow: hidden;  
   z-index: 1;
-  background: transparent; /* Garantir que não haja cor de fundo extra */
+  background: transparent; 
 }
 
 .carousel-inner {
   display: flex;
-  transition: transform 2s ease-in-out; /* Aumenta o tempo de transição */
+  transition: transform 2s ease-in-out; 
 }
 
 
@@ -294,7 +294,7 @@ body, html {
 .fullscreen-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Isso faz a imagem ocupar toda a área sem distorção */
+  object-fit: cover; 
 }
 
 /* Ajustar a largura e a altura do container */
@@ -302,8 +302,8 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 550px; /* Altura fixada do carrossel */
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para o texto */
+  height: 550px; 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   width: 100%;
 }
 
@@ -317,29 +317,29 @@ body, html {
 .carousel-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Isso garante que a imagem ocupe totalmente o espaço sem distorcer */
+  object-fit: cover; 
 }
 
 /* Texto do carrossel */
 .carousel-text {
-width: 35%; /* Controla a largura do texto */
+width: 35%; 
 position: absolute;
 top: 0;
 right: 0;
 color: white;
-font-family: 'Roboto', sans-serif; /* Fonte moderna */
-font-size: 2.5rem; /* Tamanho do texto maior */
+font-family: 'Roboto', sans-serif; 
+font-size: 2.5rem; 
 font-weight: bold;
-text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra maior */
+text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); 
 display: flex;
 flex-direction: column;
 justify-content: center;
-background: transparent; /* Fundo transparente para o texto */
+background: transparent; 
 padding: 20px;
 z-index: 10;
-opacity: 0; /* Inicialmente invisível para animação */
-animation: backInLeft 2s ease-out forwards; /* Efeito BackInLeft */
-animation-delay: 1s; /* Delay para dar tempo de fade in */
+opacity: 0; 
+animation: backInLeft 2s ease-out forwards; 
+animation-delay: 1s; 
 
 }
 
@@ -427,16 +427,16 @@ footer {
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #a5d9d6; /* Cor suave para os títulos */
+  color: #a5d9d6; 
 }
 
 /* Lista de Links - Flexbox para 2 links por linha */
 .footer-section ul {
   list-style: none;
   padding: 0;
-  display: grid; /* Usando grid para controlar as colunas */
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
-  gap: 10px; /* Espaçamento entre os links */
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
   justify-content: center;
 }
 
@@ -451,7 +451,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #a5d9d6; /* Cor quando passar o mouse */
+  color: #a5d9d6; 
 }
 
 /* Links de redes sociais e ícones */
@@ -462,15 +462,15 @@ footer {
 }
 
 .footer-section a:hover {
-  color: #a5d9d6; /* Cor ao passar o mouse */
+  color: #a5d9d6; 
 }
 
 .footer-section i {
-  transition: transform 0.3s ease; /* Suaviza o efeito de transformação */
+  transition: transform 0.3s ease; 
 }
 
 .footer-section a:hover i {
-  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+  transform: scale(1.1); 
 }
 
 /* Rodapé inferior */
@@ -483,11 +483,11 @@ footer {
 /* Responsividade para telas pequenas */
 @media screen and (max-width: 768px) {
   .footer-section ul {
-    grid-template-columns: 1fr; /* Em telas pequenas, os links vão ficar em 1 coluna */
+    grid-template-columns: 1fr; 
   }
 
   .footer-section ul li {
-    text-align: center; /* Alinha o texto ao centro */
+    text-align: center; 
   }
 }
 
@@ -505,15 +505,15 @@ footer {
 }
 
 .counter-value {
-  font-size: 3rem; /* Tamanho da fonte */
+  font-size: 3rem; 
   font-weight: bold;
-  color: #1683b1; /* Cor azul */
+  color: #1683b1; 
   transition: all 2s ease-out;
 }
 
 .counter-label {
   font-size: 1.2rem;
-  color: #333; /* Cor de texto escuro */
+  color: #333; 
   margin-top: 10px;
 }
 
@@ -527,7 +527,7 @@ footer {
   }
 }
 
-/* Estilizando o container do formulário */
+/* container do formulário */
 #contato {
   max-width: 600px;
   margin: 0 auto;
@@ -550,7 +550,7 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Estilizando os labels */
+/* labels */
 #contato label {
   display: block;
   margin-bottom: 5px;
@@ -558,7 +558,7 @@ footer {
   color: #333;
 }
 
-/* Estilizando os inputs, textarea e select */
+/* inputs, textarea e select */
 #contato input,
 #contato textarea,
 #contato select {
@@ -572,10 +572,10 @@ footer {
 }
 
 #contato textarea {
-  resize: vertical; /* Permite redimensionar verticalmente */
+  resize: vertical; 
 }
 
-/* Estilizando o botão */
+/* botão */
 #contato button {
   width: 100%;
   padding: 12px;
@@ -592,7 +592,7 @@ footer {
   background-color: #1683b1;
 }
 
-/* Estilizando o formulário para dispositivos menores */
+/* formulário para dispositivos menores */
 @media (max-width: 768px) {
   #contato {
     padding: 15px;
@@ -654,31 +654,31 @@ section h3 {
 
 .finais-felizes {
   display: flex;
-  flex-direction: column; /* Coloca os itens um embaixo do outro */
-  align-items: center; /* Centraliza os itens */
-  gap: 30px; /* Espaçamento entre os itens */
-  margin-top: 50px; /* Distância do topo */
-  padding: 0 20px; /* Espaçamento nas laterais */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 30px; 
+  margin-top: 50px; 
+  padding: 0 20px; 
 }
 
 .historia {
-  text-align: center; /* Centraliza o texto embaixo da imagem */
+  text-align: center; 
   width: 100%;
-  max-width: 600px; /* Limita o tamanho máximo das imagens */
+  max-width: 600px; 
 }
 
 .historia img {
-  width: 100%; /* Faz a imagem se ajustar ao tamanho do container */
+  width: 100%;
   height: auto;
-  border-radius: 8px; /* Borda arredondada para um visual mais suave */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .mensagem {
   font-size: 1.1rem;
   color: #333;
-  margin-top: 15px; /* Espaçamento entre a imagem e o texto */
-  font-style: italic; /* Texto em itálico para dar um toque diferente */
+  margin-top: 15px; 
+  font-style: italic; 
 }
 
 /* seção quero adotar */
